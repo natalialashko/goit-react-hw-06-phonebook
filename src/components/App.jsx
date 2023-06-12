@@ -18,10 +18,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 export const App = () => {
   // const [contacts, setContacts] = useState(JSON.parse(localStorage.getItem('contacts'))??[]);
-  const contacts = useSelector((state) =>  state.contacts);
+  const { contacts, filter } = useSelector((state) =>  state);
   const dispatch = useDispatch();
 
-  const filter = useSelector((state) =>  state.filter);
+  // const filter = useSelector((state) =>  state.filter);
 
   // const [filter, setFilter] = useState('');
   console.log('cont>> ', contacts);

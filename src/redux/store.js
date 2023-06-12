@@ -20,7 +20,7 @@ if (action.type === 'filter') {
     
 }
 // const [contacts, setContacts] = useState(JSON.parse(localStorage.getItem('contacts'))??[]);
-export const store = createStore(reducer,{
+export const store = createStore(reducer ,{
   contacts: (JSON.parse(localStorage.getItem('contacts'))??[]),
   filter: ""
 })
